@@ -16,7 +16,7 @@ public class TransactionResource {
     @Produces(MediaType.TEXT_PLAIN)
     public UUID getNewTransaction() {
         Transaction trn = new Transaction();
-        Log.info("Data transaction generated: " + trn.transactionID);
+        Log.info("Transaction generated [" + trn.transactionID + "] for person: " + trn.person.name + " " + trn.person.surname);
         return trn.transactionID;
     }
     

@@ -14,7 +14,7 @@ public class Transaction {
         Faker faker = new Faker(new Locale("pl-PL"));
 
         this.person = new Person();
-        this.transactionID = new UUID(9, 0);
+        this.transactionID = UUID.randomUUID();
     }
 
 public UUID getTransactionID() {
